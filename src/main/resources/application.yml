@@ -5,5 +5,12 @@ spring:
     password: rootroot
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+#springdoc:
+#  api-docs:
+#    enabled: false
+
+#springdoc:
+#  swagger-ui:
+#    enabled: false
 server:
   port: 8888
