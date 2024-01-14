@@ -4,12 +4,15 @@ package com.MangoSteen.app.controller;
 import com.MangoSteen.app.mapper.UserInfoMapper;
 import com.MangoSteen.app.model.UserInfo;
 import com.MangoSteen.app.service.UserInfoService;
+import lombok.val;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+
 public class UserController {
     // 构造器注入
 
@@ -24,6 +27,9 @@ public class UserController {
 
     @GetMapping("v1.0/users/{id}")
     UserInfo getUserInfoById(@PathVariable("id") Long id){
+
+        val userInfo = com.MangoSteen.app.model.dao.UserInfo.builder().username("xxx").build();
+        System.out.println(userInfo);
         return userInfoService.getUserInfoByUserId(id);
     }
 
