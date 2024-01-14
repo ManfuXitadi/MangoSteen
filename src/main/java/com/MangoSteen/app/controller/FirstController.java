@@ -1,4 +1,4 @@
-package mangosteen.controller;
+package com.MangoSteen.app.controller;
 
 
 import org.springframework.web.bind.annotation.*;

@@ -1,9 +1,9 @@
-package mangosteen.controller;
+package com.MangoSteen.app.controller;
 
 
-import mangosteen.mapper.UserInfoMapper;
-import mangosteen.model.UserInfo;
-import mangosteen.service.UserInfoService;
+import com.MangoSteen.app.mapper.UserInfoMapper;
+import com.MangoSteen.app.model.UserInfo;
+import com.MangoSteen.app.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

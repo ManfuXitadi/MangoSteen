@@ -1,4 +1,4 @@
-package mangosteen.model;
+package com.MangoSteen.app.model;
 
 import java.time.LocalDateTime;
 

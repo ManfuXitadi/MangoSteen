@@ -1,8 +1,7 @@
-package mangosteen.service;
+package com.MangoSteen.app.service;
 
-import jakarta.annotation.Resource;
-import mangosteen.mapper.UserInfoMapper;
-import mangosteen.model.UserInfo;
+import com.MangoSteen.app.mapper.UserInfoMapper;
+import com.MangoSteen.app.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
