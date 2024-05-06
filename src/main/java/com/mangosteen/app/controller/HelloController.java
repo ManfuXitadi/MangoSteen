@@ -1,6 +1,10 @@
 package com.mangosteen.app.controller;
 
+import com.mangosteen.app.model.dao.UserInfo;
+import lombok.val;
 import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDateTime;
 
 /**
  * Hello Controller
@@ -25,5 +29,17 @@ public class HelloController {
 
                             @RequestParam("status") String status){
         return String.format("%s 今天的状态时 %s", name, status);
+    }
+
+    @GetMapping("v2.1/hello")
+    public UserInfo testModel(){
+         val userinfo = UserInfo.builder()
+                 .updateTime(LocalDateTime.now())
+                 .username("test")
+                 .password("123456")
+                 .createTime(LocalDateTime.now())
+                 .id(1L)
+                                .build();
+        return userinfo;
     }
 }
